@@ -40,7 +40,9 @@ app.set("view engine", "handlebars");
 app.get("/", function(req, res) {
     res.render("home");
   });
-
+  app.get("/calendar", function(req, res) {
+    res.render("calendar");
+  });
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
